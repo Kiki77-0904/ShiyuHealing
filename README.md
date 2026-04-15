@@ -1,52 +1,20 @@
-# 食愈 Healing - 你的 AI 情绪烹饪伙伴
-**食愈 Healing** 是一款结合了情绪陪伴与烹饪引导的 AI 驱动 Web 应用。它不仅仅是一个食谱库，更是一个懂你心情的“数字厨房”，旨在通过烹饪这一治愈行为，帮助用户缓解压力、记录生活。
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-## ✨ 核心功能
+# Run and deploy your AI Studio app
 
-### 1. 🤖 三大 AI 陪伴模式
-- **知心朋友**：倾听你的烦恼，给予情感支持，并在合适的时候温柔地引导你通过烹饪来放松。
-- **陪你做饭**：根据你手头的食材和当前的心情，为你推荐“盲盒”食谱。
-- **健康减脂**：专业的营养分析，支持图片识别食物，帮你科学管理饮食。
+This contains everything you need to run your app locally.
 
-### 2. 🍳 沉浸式烹饪体验
-- **静心时刻**：在开始做饭前，提供 30 秒的冥想引导，配合白噪音，帮你切断外界纷扰。
-- **陪伴式引导**：食谱步骤不再是冷冰冰的指令，而是充满温度的对话，将烹饪动作与情绪释放相结合。
-- **AI 实时反馈**：每完成一步，AI 都会给予温暖的鼓励。
-- **多感官陪伴**：内置多种白噪音（雨声、柴火、森林等）和多种性格的语音陪伴。
+View your app in AI Studio: https://ai.studio/apps/bedd4625-8e4d-4bc7-9faa-f059d745aeb4
 
-### 3. 🎨 视觉与记录
-- **AI 艺术食谱**：为每一个烹饪步骤生成精美的、具有治愈感的食物摄影图片。
-- **食愈日记**：自动记录你的烹饪感悟、前后心情变化，并生成诗意的日记卡片。
-- **美食地图**：探索中国各地的特色美食，寻找属于你的家乡味道。
+## Run Locally
 
-### 4. 🔐 隐私与自定义
-- **自定义 API Key**：支持用户输入自己的 Google Gemini API Key，所有对话和图片生成均使用用户自己的配额。
-- **本地存储**：所有日记、食谱和 API Key 均保存在浏览器本地（IndexedDB），保护用户隐私。
+**Prerequisites:**  Node.js
 
-## 🛠️ 技术栈
 
-- **前端框架**: React 18 (Vite)
-- **编程语言**: TypeScript
-- **样式处理**: Tailwind CSS
-- **动画引擎**: Framer Motion (motion/react)
-- **图标库**: Lucide React
-- **持久化**: IndexedDB (idb-keyval)
-- **AI 引擎**: Google Gemini API (@google/genai)
-
-## 🚀 快速开始
-
-### 1. 获取 API Key
-访问 [Google AI Studio](https://aistudio.google.com/app/apikey) 获取您的免费 Gemini API Key。
-
-### 2. 配置应用
-打开应用后，点击右上角的 **钥匙图标 🔑**，输入您的 API Key 并保存。
-
-### 3. 开始体验
-在聊天窗口告诉“食愈”你今天的心情，或者直接切换到“陪你做饭”模式开始你的治愈之旅。
-
-## 📱 响应式设计
-应用已针对桌面端进行了深度优化，采用精致的卡片式布局，确保在不同分辨率的显示器上都能获得最佳的视觉体验。同时完美兼容移动端，让你随时随地开启食愈时刻。
-
----
-
-> “你没有解决所有烦恼，但你认真照顾了自己。” —— 食愈 Healing
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
